@@ -52,6 +52,10 @@ After virtual server already created, you need to create new user to access the 
 
 `service ssh restart`
 
+## Update OS
+
+`sudo apt-get update`
+
 ## Reference: 
 
 https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04
