@@ -16,7 +16,7 @@ This additional php extension below is for Laravel dependencies
 
 ## Show php info
 
-`php -i | grep "Loaded Configuration File” `
+`php -i | grep "Loaded Configuration File”`
 
 ## Config File 
 

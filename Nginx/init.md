@@ -108,7 +108,7 @@ server {
         listen 80;
         listen [::]:80;
 
-        root /home/<username>/example.com;
+        root /home/<username>/example.com/public;
         index index.php index.html index.htm index.nginx-debian.html;
 
         server_name example.com www.example.com;
