@@ -38,6 +38,8 @@ Note that this will work even if you are on a feature branch -- that does not ha
 
 ## Git remove gitignore cache
 
+when file is remove from git, other repo might still tracked those file, run this script to avoid that.
+
 `git rm --cached . -r`
 
 `git add .`
@@ -45,3 +47,17 @@ Note that this will work even if you are on a feature branch -- that does not ha
 `git commit -m 'remove cache gitignore'`
 
 `git push origin <remote_branch>`
+
+## Merge repo
+
+`cd path/to/project-b`
+
+`git remote add project-a path/to/project-a`
+
+`git fetch project-a`
+
+`git merge --allow-unrelated-histories project-a/master`
+
+or whichever branch you want to merge
+
+`git remote remove project-a`
