@@ -1,3 +1,5 @@
+# Nginx - Init
+
 ## Install Nginx
 
 `sudo apt-get install nginx`
