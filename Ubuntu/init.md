@@ -1,4 +1,4 @@
-# Intro
+# Init
 
 After virtual server already created, you need to create new user to access the server remotely before run anything else.
 
@@ -56,7 +56,7 @@ After virtual server already created, you need to create new user to access the 
 
 `sudo apt-get update`
 
-## Reference: 
+## Reference
 
 https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04
 

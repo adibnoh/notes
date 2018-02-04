@@ -1,4 +1,6 @@
-## Initialize git
+# Cheat Sheet
+
+## Initialize Git
 
 `git init`
 
@@ -61,3 +63,5 @@ when file is remove from git, other repo might still tracked those file, run thi
 or whichever branch you want to merge
 
 `git remote remove project-a`
+
+## Reference

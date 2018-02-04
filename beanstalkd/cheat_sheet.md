@@ -11,6 +11,6 @@ How is your beanstalkd feeling today? You can ask it by typing stats - this give
 * stats-tube [tube] - get the stats for a single tube
 * peek-ready - shows the next job to be processed in the current tube
 
-## Refer
+## Reference
 
 [https://lornajane.net/posts/2014/getting-started-with-beanstalkd](https://lornajane.net/posts/2014/getting-started-with-beanstalkd)

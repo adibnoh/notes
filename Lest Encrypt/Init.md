@@ -1,4 +1,4 @@
-# Lets Encrypt - Init
+# Init
 
 ## Install
 
@@ -32,9 +32,9 @@ If after Test renewal process show any error and cannot restart nginx follow thi
 
 ## Issue
 
-### 
+### Cannot Authenticated
 
-```
+```log
 Client with the currently selected authenticator does not support any combination of challenges that will satisfy the CA
 ```
 
@@ -42,7 +42,7 @@ Client with the currently selected authenticator does not support any combinatio
 
 ### After install cannot reload Nginx
 
-```
+```log
 Jan 31 11:23:56 for-the-win nginx[31506]: nginx: [emerg] bind() to 0.0.0.0:443 failed (98: Address already in use)
 Jan 31 11:23:56 for-the-win nginx[31506]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
 Jan 31 11:23:56 for-the-win nginx[31506]: nginx: [emerg] bind() to [::]:80 failed (98: Address already in use)

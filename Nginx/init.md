@@ -1,4 +1,4 @@
-# Nginx - Init
+# Init
 
 ## Install Nginx
 
@@ -14,7 +14,7 @@
 
 If encounterred error
 
-```
+```log
 ERROR: Could not find a profile matching 'OpenSSH'
 ```
 
@@ -38,7 +38,7 @@ ERROR: Could not find a profile matching 'OpenSSH'
 
 `sudo nano /etc/nginx/sites-available/default`
 
-```
+```conf
 server {
         listen 80 default_server;
         listen [::]:80 default_server;
@@ -87,7 +87,7 @@ Replace example.com with your domain name
 
 Remove default_server
 
-```
+```conf
 server {
         listen 80;
         listen [::]:80;
@@ -105,7 +105,7 @@ server {
 
 Setting for Laravel
 
-```
+```conf
 server {
         listen 80;
         listen [::]:80;
@@ -154,11 +154,11 @@ In your local mac
 
 Append this line
 
-```
+```conf
 <server_ip_address> example.com www.example.com
 ```
 
-## Reference:
+## Reference
 
 https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04
 
@@ -167,5 +167,3 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysq
 https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04
 
 https://askubuntu.com/questions/823703/openvpn-setting-up-own-server-2-errors
-
-

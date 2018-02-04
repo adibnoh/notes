@@ -1,3 +1,5 @@
+# Php 7
+
 ## Init
 
 This command will install default php version - right now php 7.0
@@ -18,37 +20,8 @@ This additional php extension below is for Laravel dependencies
 
 `php -i | grep "Loaded Configuration File”`
 
-## Config File 
+## Config File
 
 `sudo nano /etc/php/7.0/cli/php.ini`
 
-## Common Issues
-
-### Cannot run Global Laravel Installer
-
-`composer global require "laravel/installer"`
-
-```
-laravel/installer v1.5.0 requires ext-zip * -> the requested PHP extension zip is missing from your system.
-```
-
-Solution
-
-`sudo apt-get install php-zip`
-
-### Cannot Install Laravel via Laravel Installer
-
-`laravel new`
-
-```
-laravel: command not found
-```
-
-Solution
-
-`echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> ~/.bashrc`
-
-`source ~/.bashrc`
-
-
-
+## Reference
