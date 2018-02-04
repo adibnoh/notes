@@ -16,6 +16,12 @@
 
 ## Get SSL Cert
 
+so far this one worked without no problem
+
+`certbot certonly --webroot --webroot-path /var/www/html/ --renew-by-default -d yourdomainhere.com`
+
+or
+
 `sudo certbot --nginx -d example.com -d www.example.com`
 
 ## Test renewal process
@@ -60,3 +66,5 @@ Solution
 https://www.digitalocean.com/community/questions/nginx-is-unable-to-bind-to-443
 
 https://github.com/certbot/certbot/issues/5405
+
+https://gist.github.com/harryfinn/e36e41cdbfba5a6e1d69d6498a4fc5ee
