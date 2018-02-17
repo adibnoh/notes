@@ -22,6 +22,10 @@ Regenerate Application Key
 
 `php artisan key:generate`
 
+Set user group to www-data
+
+`sudo chgrp -R www-data <project_directory>`
+
 ## Common Issue
 
 ### Allow Web Server to write at Storage and Bootstrap directory
@@ -32,11 +36,9 @@ add owner of current project folder to www-data group
 
 Give the webserver the rights to read and write to storage and cache
 
-`sudo chgrp -R www-data storage bootstrap/cache`
-
 `sudo chmod -R ug+rwx storage bootstrap/cache`
 
-### Cannot run Global Laravel Installer
+### Cannot run Global Laravel Ins`taller
 
 `composer global require "laravel/installer"`
 

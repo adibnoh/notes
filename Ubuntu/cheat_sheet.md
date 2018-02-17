@@ -8,6 +8,14 @@
 
 `du -hs /path/to/directory`
 
+## Rename/Move file or directory
+
+`mv (option) filename1.ext filename2.ext`
+
+## Copy file/directory
+
+`cp <origin_path_to_file_or_directory> <destination_path_to_file_or_directory>`
+
 ## Reference
 
 * [https://askubuntu.com/questions/5444/how-to-find-out-how-much-disk-space-is-remaining](https://askubuntu.com/questions/5444/how-to-find-out-how-much-disk-space-is-remaining)

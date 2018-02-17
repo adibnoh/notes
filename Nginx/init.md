@@ -12,7 +12,7 @@
 
 `sudo ufw allow 'OpenSSH'`
 
-If encounterred error
+If encountered error
 
 ```log
 ERROR: Could not find a profile matching 'OpenSSH'
