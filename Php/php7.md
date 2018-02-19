@@ -24,6 +24,12 @@ This additional php extension below is for Laravel dependencies
 
 `sudo nano /etc/php/7.0/cli/php.ini`
 
+`/etc/php/7.1/fpm/pool.d/www.conf`
+
+## Restart Php
+
+`service php7.1-fpm restart`
+
 ## Upgrade
 
 ### Install Php7.2
@@ -49,6 +55,27 @@ then
 `sudo apt-get install php7.2-mysql`
 `sudo apt-get install php7.2-fpm`
 `sudo apt-get install php7.2-mysql`
+
+## Logs
+
+Trace slow php script
+
+![https://easyengine.io/tutorials/php/fpm-slow-log/](https://easyengine.io/tutorials/php/fpm-slow-log/)
+![https://serversforhackers.com/c/php-fpm-process-management](https://serversforhackers.com/c/php-fpm-process-management)
+
+Logs location
+
+`/var/log/php7.1-fpm.log`
+
+`/var/log/php7.1.log.slow` - custom
+
+## Issues
+
+![https://serverpilot.io/community/articles/how-to-read-the-php-slow-request-log.html](https://serverpilot.io/community/articles/how-to-read-the-php-slow-request-log.html)
+
+![https://www.digitalocean.com/community/questions/wordpress-502-504-errors-nginx-php-fpm](https://www.digitalocean.com/community/questions/wordpress-502-504-errors-nginx-php-fpm)
+
+![https://myshell.co.uk/blog/2012/07/adjusting-child-processes-for-php-fpm-nginx/](https://myshell.co.uk/blog/2012/07/adjusting-child-processes-for-php-fpm-nginx/)
 
 ## Reference
 

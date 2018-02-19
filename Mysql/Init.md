@@ -32,7 +32,13 @@ Done!, try access database remotely using Sequal Pro
 
 ![https://i.imgur.com/1gFrdqC.jpg](https://i.imgur.com/1gFrdqC.jpg)
 
-Reference:
+## Issues
+
+Mysql usage more than 100%
+
+![https://serverfault.com/questions/220188/mysql-process-goes-over-100-of-cpu-usage][https://serverfault.com/questions/220188/mysql-process-goes-over-100-of-cpu-usage]
+
+## Reference
 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql
 
