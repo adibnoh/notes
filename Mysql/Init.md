@@ -32,6 +32,30 @@ Done!, try access database remotely using Sequal Pro
 
 ![https://i.imgur.com/1gFrdqC.jpg](https://i.imgur.com/1gFrdqC.jpg)
 
+## Logs
+
+### Enable slow query log
+
+Version 5.1.6 and above:
+
+Enter the MySQL shell and run the following command:
+
+`set global slow_query_log = 'ON';`
+
+Set the path to the slow query log:
+
+`set global slow_query_log_file ='/var/log/mysql/slow-query.log';`
+
+Set the amount of time a query needs to run before being logged:
+
+`set global long_query_time = '20';` (default is 10 seconds)
+
+Confirm the changes are active by entering the MySQL shell and running the following command:
+
+`show variables like '%slow%';`
+
+![https://stackoverflow.com/questions/22609257/how-do-i-enable-the-mysql-slow-query-log](https://stackoverflow.com/questions/22609257/how-do-i-enable-the-mysql-slow-query-log)
+
 ## Issues
 
 Mysql usage more than 100%
