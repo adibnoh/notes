@@ -56,14 +56,21 @@ Confirm the changes are active by entering the MySQL shell and running the follo
 
 ![https://stackoverflow.com/questions/22609257/how-do-i-enable-the-mysql-slow-query-log](https://stackoverflow.com/questions/22609257/how-do-i-enable-the-mysql-slow-query-log)
 
+## Disable SQL Mode
+
+Only run this features in Sequal Pro
+
+`SET SQL_MODE = '';` - disable sql mode in current connection, when disconnect and reconnect to previous connection all sql mode will return to normal
+
+`SHOW VARIABLES LIKE 'sql_mode'` - check default sql mode
+
 ## Issues
 
 Mysql usage more than 100%
 
-![https://serverfault.com/questions/220188/mysql-process-goes-over-100-of-cpu-usage][https://serverfault.com/questions/220188/mysql-process-goes-over-100-of-cpu-usage]
+[https://serverfault.com/questions/220188/mysql-process-goes-over-100-of-cpu-usage](https://serverfault.com/questions/220188/mysql-process-goes-over-100-of-cpu-usage)
 
 ## Reference
 
-https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql
-
-https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+* [https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql)
+* [https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql)
