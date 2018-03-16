@@ -69,6 +69,24 @@ Logs location
 
 `/var/log/php7.1.log.slow` - custom
 
+## Php config
+
+edit php.ini
+
+```conf
+
+...
+
+; Maximum allowed size for uploaded files.
+upload_max_filesize = 40M
+
+; Must be greater than or equal to upload_max_filesize
+post_max_size = 40M
+
+...
+
+```
+
 ## Issues
 
 ![https://serverpilot.io/community/articles/how-to-read-the-php-slow-request-log.html](https://serverpilot.io/community/articles/how-to-read-the-php-slow-request-log.html)
@@ -80,3 +98,4 @@ Logs location
 ## Reference
 
 * [https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-php-7-on-ubuntu-14-04](https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-php-7-on-ubuntu-14-04)
+* [https://www.kinamo.be/en/support/faq/determining-the-correct-number-of-child-processes-for-php-fpm-on-nginx](https://www.kinamo.be/en/support/faq/determining-the-correct-number-of-child-processes-for-php-fpm-on-nginx)

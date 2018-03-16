@@ -64,6 +64,10 @@ Only run this features in Sequal Pro
 
 `SHOW VARIABLES LIKE 'sql_mode'` - check default sql mode
 
+## Show max allowed packet
+
+`SHOW VARIABLES LIKE 'max_allowed_packet';`
+
 ## Issues
 
 Mysql usage more than 100%
