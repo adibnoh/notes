@@ -54,7 +54,13 @@ After virtual server already created, you need to create new user to access the 
 
 ## Update OS
 
+Listing possible update
+
 `sudo apt-get update`
+
+Listing possible update and install update
+
+`sudo apt-get update && sudo apt-get dist-upgrade`
 
 ## Reference
 
