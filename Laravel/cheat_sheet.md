@@ -1,6 +1,52 @@
 # Cheat Sheet
 
+## Query Builer
+
+find empty column
+
+`$query->where('profile', '<>', "");`
+
 ## Event
+
+### Declare Observeable only when Model is loaded
+
+Register your Observer when on the model boot function.
+
+In this way the Observer only load when the model loaded.
+
+```php
+
+class SalesOrderDetail extends Model{
+  public static function boot() {
+    parent::boot();
+    SalesOrderDetail::observe(new SalesOrderDetailObserver());
+  }
+}
+
+```
+
+Another way is attach as trait
+
+```php
+
+trait Observable
+{
+    public static function bootObservableTrait()
+    {
+        if (isset($this->observer)) {
+            static::observe($this->observer);
+        }
+    }
+}
+
+class User extends Model
+{
+    use Observable;
+
+    protected $observer = User observer::class;
+}
+
+```
 
 ### Update Model without trigger event
 
