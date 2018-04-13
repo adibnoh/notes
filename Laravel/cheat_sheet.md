@@ -25,7 +25,7 @@ class SalesOrderDetail extends Model{
 
 ```
 
-Another way is attach as trait
+Another way is attach as trait (tested and not working yet)
 
 ```php
 
