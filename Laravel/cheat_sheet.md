@@ -10,43 +10,30 @@ find empty column
 
 ### Declare Observeable only when Model is loaded
 
-Register your Observer when on the model boot function.
-
-In this way the Observer only load when the model loaded.
-
 ```php
 
-class SalesOrderDetail extends Model{
-  public static function boot() {
-    parent::boot();
-    SalesOrderDetail::observe(new SalesOrderDetailObserver());
-  }
-}
-
-```
-
-Another way is attach as trait
-
-```php
-
-trait Observable
+trait UserObservable
 {
-    public static function bootObservableTrait()
+    protected static function boot()
     {
-        if (isset($this->observer)) {
-            static::observe($this->observer);
-        }
+        parent::boot();
+
+        static::saving(function($model){
+
+            // do your stuff
+
+        });
     }
 }
 
 class User extends Model
 {
-    use Observable;
-
-    protected $observer = User observer::class;
+    use UserObservable;
 }
 
 ```
+
+Refer: [Eloquent Events](https://laravel.com/docs/5.6/eloquent#events)
 
 ### Update Model without trigger event
 
