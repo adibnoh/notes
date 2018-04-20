@@ -6,6 +6,27 @@ find empty column
 
 `$query->where('profile', '<>', "");`
 
+### Order By another table
+
+```php
+
+// raw method
+// in this example we try sort posts using version
+$jobs = DB::table('posts')
+        ->join('versions', 'versions.post_id', '=', 'posts.id')
+        ->select('posts.*', 'versions.post_id', 'versions.created_at')
+        ->orderBy('versions.created_at', 'desc')
+        ->take(5)
+        ->get();
+
+// or use eloquent
+$posts = Post::join('posts', 'versions.post_id', '=', 'posts.id')
+        ->addSelect('posts.*', 'versions.post_id', 'versions.created_at')
+        ->orderBy('versions.created_at', 'desc')
+        ->paginate(20);
+
+```
+
 ## Event
 
 ### Declare Observeable only when Model is loaded
