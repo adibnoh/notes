@@ -98,6 +98,18 @@ Get referrer
 
 `request()->headers->get('referer')`
 
+## Model
+
+### Update model without updating timestamps
+
+```php
+
+$model->timestamps = false;
+$model->body = 'new content';
+$model->save();
+
+```
+
 ## Reference
 
 * [https://stackoverflow.com/questions/31555494/laravel-request-getting-current-path-with-query-string](https://stackoverflow.com/questions/31555494/laravel-request-getting-current-path-with-query-string)
