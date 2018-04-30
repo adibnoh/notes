@@ -67,8 +67,6 @@ Solution
 
 ## Refer
 
-https://www.digitalocean.com/community/questions/nginx-is-unable-to-bind-to-443
-
-https://github.com/certbot/certbot/issues/5405
-
-https://gist.github.com/harryfinn/e36e41cdbfba5a6e1d69d6498a4fc5ee
+* [https://www.digitalocean.com/community/questions/nginx-is-unable-to-bind-to-443](https://www.digitalocean.com/community/questions/nginx-is-unable-to-bind-to-443)
+* [https://github.com/certbot/certbot/issues/5405](https://github.com/certbot/certbot/issues/5405)
+* [https://gist.github.com/harryfinn/e36e41cdbfba5a6e1d69d6498a4fc5ee](https://gist.github.com/harryfinn/e36e41cdbfba5a6e1d69d6498a4fc5ee)
