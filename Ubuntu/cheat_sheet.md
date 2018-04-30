@@ -1,5 +1,9 @@
 # Cheat Sheet
 
+## List all hidden files and director
+
+`ls -a`
+
 ## Report file system disk space usage
 
 `df -h`

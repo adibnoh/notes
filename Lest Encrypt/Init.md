@@ -18,7 +18,11 @@
 
 so far this one worked without no problem
 
-`certbot certonly --webroot --webroot-path /var/www/html/ --renew-by-default -d yourdomainhere.com`
+`certbot certonly --webroot --webroot-path <public_path_to_domain> --renew-by-default -d yourdomainhere.com`
+
+if you want to add more subdomain just append `-d <domain>` to command above, eg:
+
+`certbot certonly --webroot --webroot-path <public_path_to_domain> --renew-by-default -d example.com -d dev.example.com`
 
 or
 

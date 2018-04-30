@@ -12,6 +12,10 @@ or
 
 `git remote add origin <repo_url>`
 
+## Show remote url
+
+`git config --get remote.origin.url`
+
 ## Fetching Remote
 
 `git fetch origin`
