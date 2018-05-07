@@ -24,6 +24,14 @@
 
 `> filename`
 
+## Check Command Path
+
+`whereis <command>`
+
+or
+
+`which <command>`
+
 ## Other packages
 
 [https://pypi.python.org/pypi/Glances](https://pypi.python.org/pypi/Glances)
