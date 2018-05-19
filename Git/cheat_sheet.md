@@ -16,6 +16,14 @@ or
 
 `git config --get remote.origin.url`
 
+or
+
+`git remote -v`
+
+## Update Remote Url
+
+`git remote set-url <remote_name> <new_path>`
+
 ## Fetching Remote
 
 `git fetch origin`
