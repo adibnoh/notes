@@ -60,8 +60,10 @@ laravel: command not found
 
 Solution
 
-`echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> ~/.bashrc`
+`nano ~/.bash_profile`
 
-`source ~/.bashrc`
+paste
+
+`export PATH=~/.composer/vendor/bin:$PATH`
 
 ## Reference
