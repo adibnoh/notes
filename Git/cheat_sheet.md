@@ -76,4 +76,8 @@ or whichever branch you want to merge
 
 `git remote remove project-a`
 
+## Check file history
+
+`gitk <filename>`
+
 ## Reference
