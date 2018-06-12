@@ -32,6 +32,10 @@ or
 
 `which <command>`
 
+## Check Mime Type
+
+`file --mime-type -b <filename>`
+
 ## Other packages
 
 [https://pypi.python.org/pypi/Glances](https://pypi.python.org/pypi/Glances)
