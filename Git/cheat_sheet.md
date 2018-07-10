@@ -80,4 +80,12 @@ or whichever branch you want to merge
 
 `gitk <filename>`
 
+## Tag
+
+### Checkout Tag to a new Branch
+
+`git checkout tags/<tag_name> -b <branch_name>`
+
 ## Reference
+
+* [https://stackoverflow.com/questions/35979642/how-to-checkout-remote-git-tag](https://stackoverflow.com/questions/35979642/how-to-checkout-remote-git-tag)
