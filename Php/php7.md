@@ -9,7 +9,9 @@ This command will install default php version - right now php 7.0
 This additional php extension below is for Laravel dependencies
 
 `sudo apt-get install php-zip`
+
 `sudo apt-get install php-mbstring`
+
 `sudo apt-get install php-xml`
 
 ## Install Composer
@@ -52,16 +54,19 @@ then
 `sudo apt-get update`
 
 `sudo apt-get install php7.2`
+
 `sudo apt-get install php7.2-mysql`
+
 `sudo apt-get install php7.2-fpm`
+
 `sudo apt-get install php7.2-mysql`
 
 ## Logs
 
 Trace slow php script
 
-![https://easyengine.io/tutorials/php/fpm-slow-log/](https://easyengine.io/tutorials/php/fpm-slow-log/)
-![https://serversforhackers.com/c/php-fpm-process-management](https://serversforhackers.com/c/php-fpm-process-management)
+* [https://easyengine.io/tutorials/php/fpm-slow-log/](https://easyengine.io/tutorials/php/fpm-slow-log/)
+* [https://serversforhackers.com/c/php-fpm-process-management](https://serversforhackers.com/c/php-fpm-process-management)
 
 Logs location
 
@@ -89,11 +94,9 @@ post_max_size = 40M
 
 ## Issues
 
-![https://serverpilot.io/community/articles/how-to-read-the-php-slow-request-log.html](https://serverpilot.io/community/articles/how-to-read-the-php-slow-request-log.html)
-
-![https://www.digitalocean.com/community/questions/wordpress-502-504-errors-nginx-php-fpm](https://www.digitalocean.com/community/questions/wordpress-502-504-errors-nginx-php-fpm)
-
-![https://myshell.co.uk/blog/2012/07/adjusting-child-processes-for-php-fpm-nginx/](https://myshell.co.uk/blog/2012/07/adjusting-child-processes-for-php-fpm-nginx/)
+* [https://serverpilot.io/community/articles/how-to-read-the-php-slow-request-log.html](https://serverpilot.io/community/articles/how-to-read-the-php-slow-request-log.html)
+* [https://www.digitalocean.com/community/questions/wordpress-502-504-errors-nginx-php-fpm](https://www.digitalocean.com/community/questions/wordpress-502-504-errors-nginx-php-fpm)
+* [https://myshell.co.uk/blog/2012/07/adjusting-child-processes-for-php-fpm-nginx/](https://myshell.co.uk/blog/2012/07/adjusting-child-processes-for-php-fpm-nginx/)
 
 ## Reference
 
