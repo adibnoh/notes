@@ -1,4 +1,4 @@
-# notes
+# Notes
 
 my scrap notes
 
