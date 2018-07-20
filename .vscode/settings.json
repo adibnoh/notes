@@ -4,6 +4,7 @@
         "gitk",
         "longpaths",
         "oneline",
-        "openssl"
+        "openssl",
+        "whereis"
     ]
 }
