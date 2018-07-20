@@ -4,9 +4,23 @@
 
 `ls -a`
 
+## Delete oversize directory
+
+delete huge file count inside folder
+
+`find <dir_path> -type f -delete`
+
+or inside current directory
+
+`find . -type f -delete`
+
 ## Report file system disk space usage
 
-`df -h`
+`df -h` - will show each first level directory
+
+or
+
+`df / -h` - will show total
 
 ## Get total storage of file or directory
 
