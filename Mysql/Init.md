@@ -58,7 +58,7 @@ Confirm the changes are active by entering the MySQL shell and running the follo
 
 ## Disable SQL Mode
 
-Only run this features in Sequal Pro
+Only run this features in Sequel Pro
 
 `SET SQL_MODE = '';` - disable sql mode in current connection, when disconnect and reconnect to previous connection all sql mode will return to normal
 
