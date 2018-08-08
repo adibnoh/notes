@@ -5,6 +5,7 @@
         "longpaths",
         "oneline",
         "openssl",
+        "sshd",
         "whereis"
     ]
 }
