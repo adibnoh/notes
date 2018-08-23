@@ -6,6 +6,7 @@
         "oneline",
         "openssl",
         "sshd",
+        "uncollapsed",
         "whereis"
     ]
 }
