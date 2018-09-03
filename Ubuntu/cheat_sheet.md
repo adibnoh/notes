@@ -1,6 +1,6 @@
 # Cheat Sheet
 
-## List all hidden files and director
+## List all hidden files and directory
 
 `ls -a`
 
