@@ -1,5 +1,11 @@
 # Cheat Sheet
 
+## Installer
+
+Install specific version, ie: `5.6.*`
+
+`composer create-project laravel/laravel="5.6.*" <project_path>`
+
 ## Query Builer
 
 find empty column
