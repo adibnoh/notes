@@ -78,6 +78,10 @@ or
 
 [https://pypi.python.org/pypi/Glances](https://pypi.python.org/pypi/Glances)
 
+## Change file/folder Ownership
+
+`sudo chown -R username:group directory`
+
 ## Reference
 
 * [https://askubuntu.com/questions/5444/how-to-find-out-how-much-disk-space-is-remaining](https://askubuntu.com/questions/5444/how-to-find-out-how-much-disk-space-is-remaining)
