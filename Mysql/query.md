@@ -21,5 +21,6 @@ ALTER TABLE `table` ADD FULLTEXT INDEX `column` (`column`)`
 ```
 
 Refer:
+## Reference
 
 * [mysql too many index](https://stackoverflow.com/questions/4120160/mysql-too-many-indexes)
