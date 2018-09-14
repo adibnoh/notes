@@ -20,7 +20,14 @@ ALTER TABLE `table` ADD FULLTEXT INDEX `column` (`column`)`
 
 ```
 
-Refer:
+## Alter Column
+
+```sql
+
+ALTER TABLE mytable CHANGE `time` `time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+
+```
+
 ## Reference
 
 * [mysql too many index](https://stackoverflow.com/questions/4120160/mysql-too-many-indexes)
