@@ -5,6 +5,8 @@
         "longpaths",
         "oneline",
         "openssl",
+        "sshd",
+        "uncollapsed",
         "whereis"
     ]
 }

@@ -66,6 +66,12 @@ Listing possible update and install update
 
 `sudo apt-get update && sudo apt-get dist-upgrade`
 
+Clean and remove old and unused package
+
+* `apt-get clean` → cleans the packages and install script in /var/cache/apt/archives/
+* `apt-get autoclean` → cleans obsolete deb-packages, less than clean
+* `apt-get autoremove` → removes orphaned packages which are not longer needed from the system, but not purges them, use the --purge option together with the command for that.
+
 ## Reference
 
 * [https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04)

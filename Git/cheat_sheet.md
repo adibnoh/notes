@@ -86,6 +86,15 @@ or whichever branch you want to merge
 
 `git checkout tags/<tag_name> -b <branch_name>`
 
+## Commit
+
+### Delete recent commit
+
+`git reset --soft HEAD~1` - keep changes
+
+`git reset --hard HEAD~1` - remove changes
+
 ## Reference
 
 * [https://stackoverflow.com/questions/35979642/how-to-checkout-remote-git-tag](https://stackoverflow.com/questions/35979642/how-to-checkout-remote-git-tag)
+* [Git Happens](https://about.gitlab.com/2018/08/08/git-happens/)

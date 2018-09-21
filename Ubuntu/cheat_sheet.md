@@ -1,12 +1,26 @@
 # Cheat Sheet
 
-## List all hidden files and director
+## Login as root
+
+Change to root when login as any user with root privileged
+
+`sudo -i`
+
+## List all hidden files and directory
 
 `ls -a`
 
+## List all file with filesize
+
+`ls -lh`
+
+## List all directories with directory size
+
+`du -sh *`
+
 ## Delete oversize directory
 
-delete huge file count inside folder
+Delete huge file count inside folder
 
 `find <dir_path> -type f -delete`
 
@@ -38,6 +52,16 @@ or
 
 `> filename`
 
+## Remove File
+
+removes files beginning with `sequence_1` and ending with `.hmf`.
+
+`rm sequence_1*.hmf`
+
+remove all files and directory including hidden files in first directory level
+
+`rm -rf {,.[!.],..?}*`
+
 ## Check Command Path
 
 `whereis <command>`
@@ -54,7 +78,12 @@ or
 
 [https://pypi.python.org/pypi/Glances](https://pypi.python.org/pypi/Glances)
 
+## Change file/folder Ownership
+
+`sudo chown -R username:group directory`
+
 ## Reference
 
 * [https://askubuntu.com/questions/5444/how-to-find-out-how-much-disk-space-is-remaining](https://askubuntu.com/questions/5444/how-to-find-out-how-much-disk-space-is-remaining)
 * [https://askubuntu.com/questions/1224/how-do-i-determine-the-total-size-of-a-directory-folder-from-the-command-line](https://askubuntu.com/questions/1224/how-do-i-determine-the-total-size-of-a-directory-folder-from-the-command-line)
+* [https://unix.stackexchange.com/questions/37350/how-do-i-remove-multiple-files-with-a-common-prefix-and-suffix](https://unix.stackexchange.com/questions/37350/how-do-i-remove-multiple-files-with-a-common-prefix-and-suffix)
