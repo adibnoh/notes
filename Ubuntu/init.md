@@ -58,6 +58,10 @@ Listing possible update
 
 `sudo apt-get update`
 
+Strictly upgrades the current packages
+
+`sudo apt-get upgrade`
+
 Listing possible update and install update
 
 `sudo apt-get update && sudo apt-get dist-upgrade`
