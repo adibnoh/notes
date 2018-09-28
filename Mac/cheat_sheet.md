@@ -18,6 +18,25 @@ example:
 
 `split -l 200 split_me`
 
+## Create Custom Alias
+
+Go to home directory
+
+`cd`
+
+Create/Edit bash profile file
+
+`nano .bash_profile`
+
+Add alias in a new line
+
+`alias l='ls -lah'`
+
+Reload bash profile
+
+`source ~/.bash_profile`
+
 ## Reference
 
 * [http://osxdaily.com/2011/05/10/generate-random-passwords-command-line/](http://osxdaily.com/2011/05/10/generate-random-passwords-command-line/)
+* [https://coolestguidesontheplanet.com/make-an-alias-in-bash-shell-in-os-x-terminal/](https://coolestguidesontheplanet.com/make-an-alias-in-bash-shell-in-os-x-terminal/)
