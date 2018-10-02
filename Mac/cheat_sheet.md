@@ -22,7 +22,7 @@ example:
 
 Go to home directory
 
-`cd`
+`cd ~`
 
 Create/Edit bash profile file
 
