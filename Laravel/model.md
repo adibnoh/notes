@@ -37,6 +37,35 @@ class User extends Model
 
 ```
 
+or
+
+```php
+
+trait UserObservable
+{
+    /**
+     * Change your boot function to boot<traitName>
+     * This way it will not interfere with boot function from other traits
+     */
+    protected static function bootUserObservable()
+    {
+        parent::boot();
+
+        static::saving(function($model){
+
+            // do your stuff
+
+        });
+    }
+}
+
+class User extends Model
+{
+    use UserObservable;
+}
+
+```
+
 Refer: [Eloquent Events](https://laravel.com/docs/5.6/eloquent#events)
 
 ### Update Model without trigger event
@@ -77,3 +106,4 @@ static::updating(function ($product) {
 ## Reference
 
 * [https://laravel.com/api/5.7/Illuminate/Database/Eloquent/Concerns/HasAttributes.html](https://laravel.com/api/5.7/Illuminate/Database/Eloquent/Concerns/HasAttributes.html)
+* [https://tighten.co/blog/laravel-tip-bootable-model-traits](https://tighten.co/blog/laravel-tip-bootable-model-traits)
