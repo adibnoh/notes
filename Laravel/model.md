@@ -46,10 +46,10 @@ trait UserObservable
     /**
      * Change your boot function to boot<traitName>
      * This way it will not interfere with boot function from other traits
+     * Need to change method to public and remove parent::boot();
      */
-    protected static function bootUserObservable()
+    public static function bootUserObservable()
     {
-        parent::boot();
 
         static::saving(function($model){
 
