@@ -32,6 +32,10 @@ Done!, try access database remotely using Sequal Pro
 
 ![https://i.imgur.com/1gFrdqC.jpg](https://i.imgur.com/1gFrdqC.jpg)
 
+### Show All Process
+
+`SHOW FULL PROCESSLIST;`
+
 ## Logs
 
 ### Enable slow query log
