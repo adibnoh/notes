@@ -29,3 +29,11 @@
 `NSLog("Display double variable %lf", number)` - Log with double variable
 
 `NSLog("Multiple Variable: %d and %d",var1, var2)` - Log with multiple variable
+
+## Firebase
+
+Disable logging to console
+
+![Screenshot](https://image.ibb.co/j2vZTp/Screenshot_2018_10_11_at_3_14_41_PM.png)
+
+[How to disable Firebase/Core debug messages in iOS](https://stackoverflow.com/questions/40169286/how-to-disable-firebase-core-debug-messages-in-ios)
