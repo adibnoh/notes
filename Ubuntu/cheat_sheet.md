@@ -82,8 +82,23 @@ or
 
 `sudo chown -R username:group directory`
 
+## Clear log file
+
+When your `/var/log` folder become to big, is good to cleanup once a while,
+
+Delete all log
+
+`find /var/log -type f -delete`
+
+Delete all .gz and rotated file
+
+`find /var/log -type f -regex ".*\.gz$"`
+
+`find /var/log -type f -regex ".*\.[0-9]$"`
+
 ## Reference
 
-* [https://askubuntu.com/questions/5444/how-to-find-out-how-much-disk-space-is-remaining](https://askubuntu.com/questions/5444/how-to-find-out-how-much-disk-space-is-remaining)
-* [https://askubuntu.com/questions/1224/how-do-i-determine-the-total-size-of-a-directory-folder-from-the-command-line](https://askubuntu.com/questions/1224/how-do-i-determine-the-total-size-of-a-directory-folder-from-the-command-line)
-* [https://unix.stackexchange.com/questions/37350/how-do-i-remove-multiple-files-with-a-common-prefix-and-suffix](https://unix.stackexchange.com/questions/37350/how-do-i-remove-multiple-files-with-a-common-prefix-and-suffix)
+* [How to find out how much disk space is remaining?](https://askubuntu.com/questions/5444/how-to-find-out-how-much-disk-space-is-remaining)
+* [How do I determine the total size of a directory (folder) from the command line?](https://askubuntu.com/questions/1224/how-do-i-determine-the-total-size-of-a-directory-folder-from-the-command-line)
+* [How do I remove multiple files with a common prefix and suffix?](https://unix.stackexchange.com/questions/37350/how-do-i-remove-multiple-files-with-a-common-prefix-and-suffix)
+* [Delete all of Var Log](https://serverfault.com/questions/185253/delete-all-of-var-log)
