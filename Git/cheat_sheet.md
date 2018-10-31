@@ -96,5 +96,5 @@ or whichever branch you want to merge
 
 ## Reference
 
-* [https://stackoverflow.com/questions/35979642/how-to-checkout-remote-git-tag](https://stackoverflow.com/questions/35979642/how-to-checkout-remote-git-tag)
+* [How to checkout remote git tag](https://stackoverflow.com/questions/35979642/how-to-checkout-remote-git-tag)
 * [Git Happens](https://about.gitlab.com/2018/08/08/git-happens/)

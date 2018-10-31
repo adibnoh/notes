@@ -38,5 +38,5 @@ Reload bash profile
 
 ## Reference
 
-* [http://osxdaily.com/2011/05/10/generate-random-passwords-command-line/](http://osxdaily.com/2011/05/10/generate-random-passwords-command-line/)
-* [https://coolestguidesontheplanet.com/make-an-alias-in-bash-shell-in-os-x-terminal/](https://coolestguidesontheplanet.com/make-an-alias-in-bash-shell-in-os-x-terminal/)
+* [Generate Random Passwords Command Line](http://osxdaily.com/2011/05/10/generate-random-passwords-command-line/)
+* [Make an alias in bash shell in OSX terminal](https://coolestguidesontheplanet.com/make-an-alias-in-bash-shell-in-os-x-terminal/)

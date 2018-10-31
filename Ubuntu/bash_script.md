@@ -28,4 +28,4 @@ save and exit nano editor
 
 ## Reference
 
-* [http://www.hackmac.org/articles/bash/bash-101-hello-world-and-a-little-further/](http://www.hackmac.org/articles/bash/bash-101-hello-world-and-a-little-further/)
+* [Bash 101 Hello World and a little further](http://www.hackmac.org/articles/bash/bash-101-hello-world-and-a-little-further/)

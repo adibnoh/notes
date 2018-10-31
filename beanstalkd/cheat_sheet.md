@@ -13,4 +13,4 @@ How is your beanstalkd feeling today? You can ask it by typing stats - this give
 
 ## Reference
 
-[https://lornajane.net/posts/2014/getting-started-with-beanstalkd](https://lornajane.net/posts/2014/getting-started-with-beanstalkd)
+[Getting Started with Beanstalkd](https://lornajane.net/posts/2014/getting-started-with-beanstalkd)
