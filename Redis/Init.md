@@ -1,5 +1,11 @@
 # Init
 
+## Install
+
+Just follow this instruction
+
+[How To Install and Configure Redis on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04)
+
 ## Restart/Stop/Start Server
 
 `/etc/init.d/redis-server restart`
