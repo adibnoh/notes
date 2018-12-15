@@ -1,5 +1,9 @@
 # Cheat Sheet
 
+## View list of services that available
+
+`brew services list`
+
 ## Restart a service
 
 `brew services restart <package_name>`

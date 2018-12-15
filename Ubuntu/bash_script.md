@@ -12,7 +12,7 @@ inside sample.sh insert this line
 
 #!/bin/bash
 
-echo "hellow world"
+echo "hello world"
 
 ```
 
