@@ -160,10 +160,7 @@ Append this line
 
 ## Reference
 
-https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04
-
-https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04
-
-https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04
-
-https://askubuntu.com/questions/823703/openvpn-setting-up-own-server-2-errors
+* [How To Install Nginx on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04)
+* [How To Install Linux, Nginx, MySQL, PHP (LEMP stack) in Ubuntu 16.04](https://www.digitalocean.caom/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04)
+* [How To Set Up Nginx Server Blocks (Virtual Hosts) on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04)
+* [OpenVPN setting up own server 2 errors](https://askubuntu.com/questions/823703/openvpn-setting-up-own-server-2-errors)
