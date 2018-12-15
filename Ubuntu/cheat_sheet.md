@@ -62,6 +62,10 @@ removes files beginning with `sequence_1` and ending with `.hmf`.
 
 `rm sequence_1*.hmf`
 
+remove hidden files and folder
+
+`rm -R .*`
+
 remove all files and directory including hidden files in first directory level
 
 `rm -rf {,.[!.],..?}*`
