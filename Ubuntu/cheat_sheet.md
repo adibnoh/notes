@@ -104,6 +104,10 @@ Delete all .gz and rotated file
 
 `truncate -s 0 storage/logs/*log`
 
+## List files in databases that match a pattern
+
+`locate <program>`
+
 ## Reference
 
 * [How to find out how much disk space is remaining?](https://askubuntu.com/questions/5444/how-to-find-out-how-much-disk-space-is-remaining)
