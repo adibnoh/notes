@@ -34,6 +34,10 @@ or
 
 If after Test renewal process show any error and cannot restart nginx follow this [fix][#after-install-cannot-reload-nginx]
 
+## Check Status
+
+`sudo cerbot certificates`
+
 ## Issue
 
 ### Cannot Authenticated
