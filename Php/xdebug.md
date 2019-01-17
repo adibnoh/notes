@@ -66,6 +66,8 @@ Create `ext-xdebug.ini` inside conf.d directory
 zend_extension=<xdebug.so path>
 xdebug.remote_enable=1
 xdebug.remote_autostart=1
+; change port -- optional
+xdebug.remote_port=9001
 
 
 ```
