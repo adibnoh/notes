@@ -8,6 +8,10 @@ or
 
 `openssl rand -hex 13`
 
+## Copy content of file to clipboard
+
+`pbcopy < file`
+
 ## CSV
 
 Split csv per line
