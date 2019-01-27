@@ -16,6 +16,8 @@
 
 ## Get SSL Cert
 
+### Web Root Path Method
+
 so far this one worked without no problem
 
 `certbot certonly --webroot --webroot-path <public_path_to_domain> --renew-by-default -d yourdomainhere.com`
@@ -24,7 +26,36 @@ if you want to add more subdomain just append `-d <domain>` to command above, eg
 
 `certbot certonly --webroot --webroot-path <public_path_to_domain> --renew-by-default -d example.com -d dev.example.com`
 
-or
+After that you need to manually add this line to your nginx config
+
+```conf
+
+...
+
+server {
+    ...
+
+    listen 443 ssl;
+    ssl_certificate /etc/letsencrypt/live/<yourdomainhere.com>/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/<yourdomainhere.com>/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+
+    if ($scheme != "https") {
+        return 301 https://$host$request_uri;
+    }
+
+    ...
+}
+
+...
+
+```
+
+After that restart your nginx server
+
+### Nginx Method
 
 `sudo certbot --nginx -d example.com -d www.example.com`
 
@@ -36,7 +67,7 @@ If after Test renewal process show any error and cannot restart nginx follow thi
 
 ## Check Status
 
-`sudo cerbot certificates`
+`sudo certbot certificates`
 
 ## Issue
 
