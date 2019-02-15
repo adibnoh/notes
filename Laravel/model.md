@@ -106,4 +106,4 @@ static::updating(function ($product) {
 ## Reference
 
 * [https://laravel.com/api/5.7/Illuminate/Database/Eloquent/Concerns/HasAttributes.html](https://laravel.com/api/5.7/Illuminate/Database/Eloquent/Concerns/HasAttributes.html)
-* [https://tighten.co/blog/laravel-tip-bootable-model-traits](https://tighten.co/blog/laravel-tip-bootable-model-traits)
+* [Laravel Tip: Bootable Model Traits](https://tighten.co/blog/laravel-tip-bootable-model-traits)

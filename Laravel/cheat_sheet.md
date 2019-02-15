@@ -61,4 +61,4 @@ Get referrer
 
 ## Reference
 
-* [https://stackoverflow.com/questions/31555494/laravel-request-getting-current-path-with-query-string](https://stackoverflow.com/questions/31555494/laravel-request-getting-current-path-with-query-string)
+* [Laravel Request getting current path with query string](https://stackoverflow.com/questions/31555494/laravel-request-getting-current-path-with-query-string)
