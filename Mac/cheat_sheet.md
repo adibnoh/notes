@@ -40,6 +40,14 @@ Reload bash profile
 
 `source ~/.bash_profile`
 
+## Create dummy file
+
+`mkfile -n size[b|k|m|g] filename`
+
+eg:
+
+`mkfile -n 1g ~/Desktop/LargeTestFile` 
+
 ## Reference
 
 * [Generate Random Passwords Command Line](http://osxdaily.com/2011/05/10/generate-random-passwords-command-line/)
