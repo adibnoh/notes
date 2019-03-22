@@ -25,7 +25,7 @@ Variable in blade that come from controller doesn't support autocomplete.
 
 ```php
 
-/** @var \Type $variable */
+<?php /** @var \Type $variable */ ?>
 
 ```
 
