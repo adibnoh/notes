@@ -26,3 +26,7 @@ mysql: [ERROR] Fatal error in defaults handling. Program aborted!
 Solution
 
 `mkdir /usr/local/etc/my.cnf.d`
+
+## Option is removed
+
+[Read more here](https://github.com/Homebrew/homebrew-core/issues/31510)
