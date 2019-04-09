@@ -41,9 +41,9 @@ $.ajax({
 		alert('request success');
 		console.log(data); // show data from server
 	},
-	error: function(data){
+	error: function(xhr, ajaxOptions, thrownError){
 		alert('request failed');
-		console.error(data);
+		console.error(xhr);
 	}
 });
 
@@ -96,9 +96,9 @@ $.ajax({
 		alert('upload success');
 		console.log(data); // show data from server
 	},
-	error: function(data){
+	error: function(xhr, ajaxOptions, thrownError){
 		alert('upload failed');
-		console.error(data);
+		console.error(xhr);
 	}
 });
 
