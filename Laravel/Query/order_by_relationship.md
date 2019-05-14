@@ -14,7 +14,7 @@ $jobs = DB::table('posts')
         ->get();
 
 // or use eloquent
-$posts = Post::join('posts', 'versions.post_id', '=', 'posts.id')
+$posts = Post::join('versions', 'versions.post_id', '=', 'posts.id')
         ->addSelect('posts.*', 'versions.post_id', 'versions.created_at')
         ->orderBy('versions.created_at', 'desc')
         ->paginate(20);
@@ -29,9 +29,9 @@ Setup Comment Model first
 
 ```php
 
-	// App/Comment.php
+    // App/Comment.php
 
-	/**
+    /**
      * Orders a comment by the sum of the votes that it has in the comment_votes table.
      * Comment votes can have a position of 1, 0 and -1 so the sum of all these entries works as a rank.
      *
@@ -48,7 +48,7 @@ Setup Comment Model first
             ->orderBy('commentRank', $order);
     }
 
- 
+
     /**
      * An alternative relationship with comment votes for DB count queries
      */
