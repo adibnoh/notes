@@ -103,7 +103,70 @@ static::updating(function ($product) {
 
 ```
 
+## Get Model Table
+
+```php
+
+$table = with(new Model)->getTable();
+
+
+```
+
+## Ignore Appends
+
+```php
+
+$posts = Post::all();
+
+$posts->each(function ($post) {
+  $post->setAppends([]);
+});
+
+// or
+
+$posts->each->setAppends([]);
+
+
+```
+
+## UUID Model
+
+If your model primary key is UUID you can add this trait to help create UUID value when creating your model
+
+```php
+
+<?php
+
+namespace App\Traits\Model;
+
+use Str;
+
+trait UuidAsPrimaryKey
+{
+    public static function bootUuidAsPrimaryKey()
+    {
+
+        static::creating(function ($model) {
+            $model->incrementing = false;
+            $model->{$model->getKeyName()} = (string) Str::uuid();
+        });
+
+    }
+}
+
+```
+
+## Initiate Model
+
+```php
+
+$post = (new Post)->newQuery();
+
+```
+
 ## Reference
 
 * [https://laravel.com/api/5.7/Illuminate/Database/Eloquent/Concerns/HasAttributes.html](https://laravel.com/api/5.7/Illuminate/Database/Eloquent/Concerns/HasAttributes.html)
 * [Laravel Tip: Bootable Model Traits](https://tighten.co/blog/laravel-tip-bootable-model-traits)
+* [Laravel, how to ignore an accessor](https://stackoverflow.com/questions/28015039/laravel-how-to-ignore-an-accessor)
+* [Using a UUID with Laravel’s Eloquent ORM](https://garrettstjohn.com/articles/using-uuid-laravel-eloquent-orm/#comment-1610987696)
