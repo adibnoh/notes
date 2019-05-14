@@ -10,7 +10,7 @@
 
 example
 
-`brew services restart php72`
+`brew services restart php@7.2`
 
 ## Mysql
 
