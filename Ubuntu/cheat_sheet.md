@@ -22,6 +22,16 @@ Change to root when login as any user with root privileged
 
 `du -hs * | sort -rh | head -5`
 
+## Find file by filename
+
+`find <location> -iname "filename"`
+
+Leave empty if want to search current_directory recursively
+
+eg:
+
+`find -iname "photo.jpg"`
+
 ## Delete oversize directory
 
 Delete huge file count inside folder
