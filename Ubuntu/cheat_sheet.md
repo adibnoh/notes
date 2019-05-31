@@ -6,6 +6,10 @@ Change to root when login as any user with root privileged
 
 `sudo -i`
 
+## List all users
+
+`cat /etc/passwd`
+
 ## List all hidden files and directory
 
 `ls -a`
