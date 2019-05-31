@@ -130,3 +130,4 @@ Delete all .gz and rotated file
 * [Delete all of Var Log](https://serverfault.com/questions/185253/delete-all-of-var-log)
 * [Find Top Large Directories and Files Sizes in Linux](https://www.tecmint.com/find-top-large-directories-and-files-sizes-in-linux/)
 * [How to truncate all logfiles?](https://askubuntu.com/questions/266738/how-to-truncate-all-logfiles#266740)
+* [Linux List All Users In The System](https://www.cyberciti.biz/faq/linux-list-users-command/)

@@ -58,7 +58,7 @@ Confirm the changes are active by entering the MySQL shell and running the follo
 
 `show variables like '%slow%';`
 
-![https://stackoverflow.com/questions/22609257/how-do-i-enable-the-mysql-slow-query-log](https://stackoverflow.com/questions/22609257/how-do-i-enable-the-mysql-slow-query-log)
+[How do I enable the MySQL slow query log? [duplicate]](https://stackoverflow.com/questions/22609257/how-do-i-enable-the-mysql-slow-query-log)
 
 ## Disable SQL Mode
 
@@ -76,9 +76,9 @@ Only run this features in Sequel Pro
 
 Mysql usage more than 100%
 
-[https://serverfault.com/questions/220188/mysql-process-goes-over-100-of-cpu-usage](https://serverfault.com/questions/220188/mysql-process-goes-over-100-of-cpu-usage)
+[MySQL process goes over 100% of CPU usage](https://serverfault.com/questions/220188/mysql-process-goes-over-100-of-cpu-usage)
 
 ## Reference
 
-* [https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql)
-* [https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql)
+* [How To Set Up a Remote Database to Optimize Site Performance with MySQL](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql)
+* [How To Create a New User and Grant Permissions in MySQL](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql)
