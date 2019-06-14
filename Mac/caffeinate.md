@@ -2,13 +2,13 @@
 
 Prevent mac from sleeping
 
-# NAME
+## NAME
      caffeinate -- prevent the system from sleeping on behalf of a utility
 
-SYNOPSIS
+## SYNOPSIS
      caffeinate [-disu] [-t timeout] [-w pid] [utility arguments...]
 
-DESCRIPTION
+## DESCRIPTION
      caffeinate creates assertions to alter system sleep behavior.  If no
      assertion flags are specified, caffeinate creates an assertion to prevent
      idle sleep.  If a utility is specified, caffeinate creates the assertions

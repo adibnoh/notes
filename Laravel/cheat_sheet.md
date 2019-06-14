@@ -55,7 +55,7 @@ class BettingOdds extends Model
       if (! isset(self::$sports[$sport])) {
          return $query;
       }
-      
+        
       return $query->where('sport_id', self::$sports[$sport]);
    }
 }
