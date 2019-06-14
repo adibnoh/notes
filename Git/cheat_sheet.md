@@ -94,7 +94,14 @@ or whichever branch you want to merge
 
 `git reset --hard HEAD~1` - remove changes
 
+### Temporary switch commit
+
+If you want to temporarily go back to it, fool around, then come back to where you are, all you have to do is check out the desired commit:
+
+`git checkout 0d1d7fc32`
+
 ## Reference
 
 * [How to checkout remote git tag](https://stackoverflow.com/questions/35979642/how-to-checkout-remote-git-tag)
 * [Git Happens](https://about.gitlab.com/2018/08/08/git-happens/)
+* [How to revert a Git repository to a previous commit](https://stackoverflow.com/questions/4114095/how-to-revert-a-git-repository-to-a-previous-commit)
