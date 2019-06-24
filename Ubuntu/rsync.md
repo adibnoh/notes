@@ -14,4 +14,4 @@ example - copy folder blog to folder adibnoh.
 
 ## References
 
-* [https://kyup.com/tutorials/copy-files-rsync-ssh/](https://kyup.com/tutorials/copy-files-rsync-ssh/)
+* [How to copy files with rsync over SSH](https://kyup.com/tutorials/copy-files-rsync-ssh/)
