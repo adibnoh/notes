@@ -30,3 +30,8 @@ Prevent mac from sleeping
      -u      Create an assertion to declare that user is active. If the dis-
              play is off, this option turns the display on and prevents the
              display from going into idle sleep. If a timeout is not specified
+
+
+## Usage
+
+`caffeinate -disum`
