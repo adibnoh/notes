@@ -73,3 +73,11 @@ remove all files and directory including hidden files in first directory level
 ## List files in databases that match a pattern
 
 `locate <program>`
+
+## Count files
+
+`ls -l -R <path> | grep ^- | wc -l`
+
+## Reference
+
+* [Find number of files in folder and sub folders?](https://askubuntu.com/questions/34099/find-number-of-files-in-folder-and-sub-folders)
