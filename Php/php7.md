@@ -102,3 +102,4 @@ post_max_size = 40M
 
 * [How To Upgrade to PHP 7 on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-php-7-on-ubuntu-14-04)
 * [Determining the correct number of child processes for PHP-FPM on NGinx](https://www.kinamo.be/en/support/faq/determining-the-correct-number-of-child-processes-for-php-fpm-on-nginx)
+* [PHP-FPM: Process Management](https://serversforhackers.com/c/php-fpm-process-management)
