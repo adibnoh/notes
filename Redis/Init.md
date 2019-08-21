@@ -14,6 +14,16 @@ Just follow this instruction
 
 `/etc/init.d/redis-server start`
 
+## CLI
+
+run `redis-cli` to enter redis command line mode
+
+you may run any redis operation here.
+
+### Check Version
+
+`INFO`
+
 ## Config
 
 `nano /etc/redis/redis.conf`

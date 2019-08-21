@@ -16,7 +16,7 @@ FULLTEXT INDEX
 
 ```sql
 
-ALTER TABLE `table` ADD FULLTEXT INDEX `column` (`column`)`
+ALTER TABLE `table` ADD FULLTEXT INDEX `<index_name>` (`column`)`
 
 ```
 
