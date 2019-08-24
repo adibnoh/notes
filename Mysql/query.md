@@ -16,7 +16,7 @@ FULLTEXT INDEX
 
 ```sql
 
-ALTER TABLE `table` ADD FULLTEXT INDEX `column` (`column`)`
+ALTER TABLE `table` ADD FULLTEXT INDEX `<index_name>` (`column`)`
 
 ```
 
@@ -47,6 +47,30 @@ as aggregate from
 
 ```
 
+## Having
+
+One of `Having` purpose is to filter `GROUP BY` clause
+
+```sql
+
+...
+GROUP BY meetingID
+HAVING COUNT( caseID )<4
+
+
+```
+
+`Having` with multiple condition
+
+```sql
+
+...
+GROUP BY meetingID
+HAVING COUNT(caseID) < 4 AND COUNT(caseID) > 2
+
+```
+
 ## Reference
 
 * [mysql too many index](https://stackoverflow.com/questions/4120160/mysql-too-many-indexes)
+* [Multiple aggregate functions in HAVING clause](https://stackoverflow.com/questions/14756222/multiple-aggregate-functions-in-having-clause)
