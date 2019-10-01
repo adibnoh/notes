@@ -23,6 +23,38 @@ $posts = Post::join('versions', 'versions.post_id', '=', 'posts.id')
 
 ## Order by sum of relationship
 
+Assume we have Model Post and Comment
+
+```php
+
+    // App/Post
+    
+    public function comments()
+    {
+        return $this->hasMany('App\Comment', 'post_id');
+    }
+
+    // Usage
+    
+    Post::withCount('comments')
+    ->orderBy('comments_count', 'desc')
+    ->get();
+
+    // Usage - distinct by custom column in table comment
+    // Example below show that we can sort posts by total of user that comment to single post
+    
+    Post::withCount([
+        'comments' => function($query) {
+            $query->select(\DB::raw('count(distinct(comments.user_id))'));
+        }
+    ])
+    ->orderBy('comments_count', 'desc')
+    ->get();
+
+```
+
+## Order by sum of relationship (alternative)
+
 Assume we have Model Comment and CommentVote
 
 Setup Comment Model first
@@ -93,4 +125,6 @@ foreach ($comments as $comment) {
 
 ## Reference
 
-[Order By Related Field Sum](https://laracasts.com/discuss/channels/eloquent/order-by-related-field-sum)
+* [Order By Related Field Sum](https://laracasts.com/discuss/channels/eloquent/order-by-related-field-sum)
+* [Using withCount() on a relationship that has distinct()](https://stackoverflow.com/a/55995026)
+* [Laravel OrderBy relationship count](https://stackoverflow.com/a/46781121)
