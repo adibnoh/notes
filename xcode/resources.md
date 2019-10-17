@@ -14,4 +14,6 @@
 * [HOW TO AUTO ADJUST UISCROLLVIEW WHEN KEYBOARD IS UP (SWIFT-4, XCODE-9)
 ](https://www.youtube.com/watch?v=D3sxanj3vd8)
 
-https://stackoverflow.com/questions/24089999/how-do-you-create-a-swift-date-object
+## Date
+
+* [How do you create a swift Date object](https://stackoverflow.com/questions/24089999/how-do-you-create-a-swift-date-object)
