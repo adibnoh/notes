@@ -83,3 +83,9 @@ open /Applications/Xcode.app
 ```
 
 [https://gist.github.com/maciekish/66b6deaa7bc979d0a16c50784e16d697](https://gist.github.com/maciekish/66b6deaa7bc979d0a16c50784e16d697)
+
+## Clean Folder Core Simulator
+
+`xcrun simctl delete unavailable`
+
+[MacOS Xcode CoreSimulator folder very big. Is it ok to delete content?](https://stackoverflow.com/questions/33419301/macos-xcode-coresimulator-folder-very-big-is-it-ok-to-delete-content)
