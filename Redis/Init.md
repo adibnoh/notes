@@ -59,6 +59,11 @@ Disable snapshot
 * [4.1.1 Persisting to disk with snapshots](https://redislabs.com/ebook/part-2-core-concepts/chapter-4-keeping-data-safe-and-ensuring-performance/4-1-persistence-options/4-1-1-persisting-to-disk-with-snapshots/)
 * [Redis Persistence](https://redis.io/topics/persistence)
 
+### Limit Max Memory
+
+`maxmemory 1gb`
+
 ## Reference
 
 * [Redis configuration for production](https://scaleyourcode.com/blog/article/15)
+* [How To Change Redis's Configuration from the Command Line](https://www.digitalocean.com/community/cheatsheets/how-to-change-redis-configuration)
