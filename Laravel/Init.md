@@ -38,7 +38,7 @@ Give the webserver the rights to read and write to storage and cache
 
 `sudo chmod -R ug+rwx storage bootstrap/cache`
 
-### Cannot run Global Laravel Ins`taller
+### Cannot run Global Laravel Installer
 
 `composer global require "laravel/installer"`
 
