@@ -19,3 +19,7 @@ Log
 Open file shortcut
 
 `command + shift + o`
+
+## Reindent
+
+https://stackoverflow.com/questions/16580171/code-formatting-shortcut-in-android-studio

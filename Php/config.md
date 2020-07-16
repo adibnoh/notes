@@ -1,6 +1,8 @@
 # Config
 
-## FPM Config
+## CLI
+
+## FPM
 
 File location
 
@@ -25,11 +27,27 @@ Restart Php after config file has been updated
 
 `service php7.2-fpm restart`
 
-## Php Ini
+### Calculate Process
 
-File location
+Assume Php server has capacity of 4gb Ram, and each of Php process take up 30mb
 
-`/etc/php/7.2/cli/php.ini`
+`(1024*4) / 30 = 136.53`, we can round it up to 130 max server
+
+```conf
+
+pm.max_children = 130 # The hard-limit total number of processes allowed
+pm.start_servers = 20 # When php-fpm starts, have this many processes waiting for requests
+pm.min_spare_servers = 10 # Number spare processes php-fpm will create
+pm.max_spare_servers = 20 # Max number of spare (waiting for connections) processes allowed to be created
+pm.process_idle_timeout = 10s;
+
+```
+
+## INI
+
+Locate php ini location
+
+`php -i | grep php.ini`
 
 ```conf
 

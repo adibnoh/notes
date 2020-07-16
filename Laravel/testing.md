@@ -1,4 +1,12 @@
-# Unit Testing
+# Testing
+
+## Feature
+
+## Unit
+
+factory helper not working in Unit Testing, move to Feature Testing
+
+## Run Testing
 
 Run unit testing from specific method and from specific file
 
@@ -23,3 +31,5 @@ example:
 ## Reference
 
 * [Run only one unit test from a test suite in laravel](https://stackoverflow.com/questions/38821326/run-only-one-unit-test-from-a-test-suite-in-laravel)
+* [Factory not found in Laravel unit testing
+](https://laracasts.com/discuss/channels/laravel/factory-not-found-in-laravel-unit-testing)
