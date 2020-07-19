@@ -158,9 +158,119 @@ Append this line
 <server_ip_address> example.com www.example.com
 ```
 
+### Redirect www to non-www
+
+```conf
+
+server {
+        
+        ...
+
+        if ($host = www.domain.com) {
+                return 301 https://domain.com$request_uri; // this redirect to https, if you wish to redirect to non-ssl site, change accordingly
+        }
+
+        ...
+}
+
+```
+
+or
+
+```
+
+server {
+    server_name  www.mydomain.com;
+    return       301 https://mydomain.com$request_uri;
+}
+
+```
+
+whichever works
+
+### Add user to www-data
+
+List all user in www-data
+
+`grep ^www-data /etc/group`
+
+add user in www-data group
+
+`sudo adduser <user> www-data`
+
+
+### 
+
+```conf
+
+server {
+
+        location ~* .(jpg|jpeg|png|gif|ico|css|js)$ {
+            expires 365d;
+        }
+
+        server_tokens off;
+
+        #GZIP
+        # Enable gzip compression.
+        gzip on;                                                                  
+                                                                            
+        # Compression level (1-9).                                                 
+        # 5 is a perfect compromise between size and CPU usage, offering about     
+        # 75% reduction for most ASCII files (almost identical to level 9).        
+        gzip_comp_level    5;                                                      
+                                                                                
+        # Don't compress anything that's already small and unlikely to shrink much 
+        # if at all (the default is 20 bytes, which is bad as that usually leads to
+        # larger files after gzipping).                                            
+        gzip_min_length    256;                                                    
+                                                                                
+        # Compress data even for clients that are connecting to us via proxies,    
+        # identified by the "Via" header (required for CloudFront).                
+        gzip_proxied       any;     
+
+         # Tell proxies to cache both the gzipped and regular version of a resource
+        # whenever the client's Accept-Encoding capabilities header varies;
+        # Avoids the issue where a non-gzip capable client (which is extremely rare
+        # today) would display gibberish if their proxy gave them the gzipped version.
+        gzip_vary          on;
+
+        # Compress all output labeled with one of the following MIME-types.
+        gzip_types
+        application/atom+xml
+        application/javascript
+        application/json
+        application/ld+json
+        application/manifest+json
+        application/rss+xml
+        application/vnd.geo+json
+        application/vnd.ms-fontobject
+        application/x-font-ttf
+        application/x-web-app-manifest+json
+        application/xhtml+xml
+        application/xml        
+        font/opentype
+        image/bmp
+        image/svg+xml
+        image/x-icon
+        text/cache-manifest
+        text/css
+        text/plain
+        text/vcard
+        text/vnd.rim.location.xloc
+        text/vtt
+        text/x-component
+        text/x-cross-domain-policy;
+        # text/html is always compressed by gzip module                                       
+
+}
+
+```
+
 ## Reference
 
 * [How To Install Nginx on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04)
 * [How To Install Linux, Nginx, MySQL, PHP (LEMP stack) in Ubuntu 16.04](https://www.digitalocean.caom/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04)
 * [How To Set Up Nginx Server Blocks (Virtual Hosts) on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04)
 * [OpenVPN setting up own server 2 errors](https://askubuntu.com/questions/823703/openvpn-setting-up-own-server-2-errors)
+* [NGINX redirect www to non-www](https://www.digitalocean.com/community/questions/nginx-redirect-www-to-non-www-e1f70f55-b31d-4612-bc14-e31c3cfece26)

@@ -16,6 +16,4 @@ This additional php extension below is for Laravel dependencies
 
 `sudo apt-get install php-fpm`
 
-`sudo apt-get install php-mysql`
-
 `sudo apt-get install php-imagick`
