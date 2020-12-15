@@ -61,7 +61,17 @@ Disable snapshot
 
 ### Limit Max Memory
 
-`maxmemory 1gb`
+`maxmemory 1gb` - 70% from allocated memory
+
+### Max Memory Policy
+
+if we are intent to use redis as cache set to `maxmemory-policy allkeys-lru` - remove less used keys regardless of the  expire set
+
+### Append Only File persistence
+
+Append Only File will save each operation to log file - if we dont care about data persistence, disable this option
+
+`appendonly no`
 
 ## Reference
 

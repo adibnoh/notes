@@ -35,43 +35,13 @@ Lets say your database server is 1G Ram
 
 [mysqld]
 
-# SAFETY #
-max-allowed-packet             = 16M
-max-connect-errors             = 100
-skip-name-resolve
-sql-mode                       = ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+key-buffer-size                = 1.5G # 25% from allocated RAM
+max-connections                = 1500 # refer https://www.mysqlcalculator.com/
 
-# CACHES AND LIMITS #
-key-buffer-size                = 16M
-tmp-table-size                 = 16M
-max-heap-table-size            = 16M
-query-cache-type               = 0
-query-cache-size               = 16M
-max-connections                = 151
-thread-stack                   = 196608
-thread-cache-size              = 8
-open-files-limit               = 5000
-table-definition-cache         = 1400
-table-open-cache               = 2000
-
-# INNODB #
-innodb-flush-method            = 0
-innodb-log-files-in-group      = 2
-innodb-log-file-size           = 50M
-innodb-flush-log-at-trx-commit = 1
-innodb-file-per-table          = 1
-innodb-buffer-pool-size        = 128M
-innodb-log-buffer-size         = 16M
-
-innodb-io-capacity = 200
-innodb-io-capacity-max = 2000
-innodb-read-io-threads = 4
-innodb-thread-concurrency = 4
-innodb-write-io-threads = 4
+table-open-cache = 4000 # should be higher than opened_tables value -> check value by running `SHOW GLOBAL STATUS LIKE 'Opened_tables';'`
 
 # LOGGING #
 log-error                      = /var/lib/mysql/mysql-error.log
-log-queries-not-using-indexes  = 1
 slow-query-log                 = 1
 slow-query-log-file            = /var/lib/mysql/mysql-slow.log
 long-query-time                = 10
