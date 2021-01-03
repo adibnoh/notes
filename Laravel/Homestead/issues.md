@@ -19,3 +19,7 @@ Re-create homestead
 need to reinstall certificate to browser
 
 [Using Laravel Homestead: 'no input file specified'](https://stackoverflow.com/questions/24274387/using-laravel-homestead-no-input-file-specified)
+
+## NPM
+
+npm installation might not work inside homestead, you need to run it outside homestead

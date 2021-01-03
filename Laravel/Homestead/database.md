@@ -1,5 +1,16 @@
 # Database
 
+## Default Configuration
+
+You can connect to database using HeidiSql
+
+hostname: 127.0.0.1
+user: homestead
+password: secret
+port: 33060
+
+## Using Putty Tunnel
+
 connect to database
 
 1. SSH to homestead via putty
@@ -45,6 +56,7 @@ Password: secret
 Port: 3306
 ```
 
-## Reference
+## References
 
-[Homestead VM tutorial - Access Homestead database from heidisql interface](https://www.youtube.com/watch?v=sSIETAHuqlQ)
+* [Connecting To Databases](https://laravel.com/docs/8.x/homestead#connecting-to-databases)
+* [Homestead VM tutorial - Access Homestead database from heidisql interface](https://www.youtube.com/watch?v=sSIETAHuqlQ)

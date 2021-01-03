@@ -10,6 +10,10 @@ TODO
 
 `homestead up`
 
+## Stop Homestead
+
+`homestead halt`
+
 ## SSH to Homestead
 
 reconmended way to ssh is via Putty
