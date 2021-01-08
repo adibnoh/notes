@@ -1,19 +1,18 @@
 # Php
 
-## Config file location
+## Install
 
-`/usr/local/etc/php`
+`brew install php` -> this will install latest php version
 
-## Install Extension
+`brew install php@7.4`
 
-Brew no longer support install with option
+## Imagick
 
-### Install IMAP Extension
+* brew install imagemagick
+* pecl install imagick
 
-`brew tap kabel/php-ext`
-
-`brew install php@7.2-imap` - assumed your php version is 7.2
+restart valet
 
 ## References
 
-* [PHP 7.2 extensions](https://github.com/kabel/homebrew-php-ext/issues/1)
+https://github.com/Imagick/imagick/issues/289#issuecomment-500951481
