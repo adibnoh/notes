@@ -1,0 +1,1 @@
+https://laracasts.com/discuss/channels/laravel/artisan-exit-codes

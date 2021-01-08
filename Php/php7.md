@@ -61,6 +61,8 @@ then
 
 `sudo apt-get install php7.2-mysql`
 
+`sudo apt-get install php7.2-imagick`
+
 ## Logs
 
 Trace slow php script

@@ -2,7 +2,29 @@
 
 ## Install
 
-`brew install php` -> this will install latest php version
+### php
+
+`brew install php`
+
+### php 7.2
+
+`brew install php@7.2`
+
+## Switch version
+
+`brew unlink php`
+
+`brew services stop php`
+
+`brew services start php@7.2`
+
+`brew link php@7.2`
+
+and vice versa
+
+and ensure php actually stop running, run `brew services list`. If your php is run by root, you might need to sudo to turn it off.
+
+might need to restart valet after php version is changed 
 
 `brew install php@7.4`
 
@@ -13,6 +35,33 @@
 
 restart valet
 
+### PhpRedis
+
+Need to use pecl to install PhpRedis
+
+`pecl install redis`
+
+edit `php.ini`
+
+```
+
+extension=<path_to_redis.so>/redis.so
+
+```
+
+restart php
+
+## Restart Php
+
+`brew services restart php`
+
+## Upgrade Php
+
+`brew upgrade php`
+
+After each upgrade, need to reinstall all Php extension manually and update their path in `php.ini`.
+
 ## References
 
-https://github.com/Imagick/imagick/issues/289#issuecomment-500951481
+* [Php Redis](https://github.com/phpredis/phpredis)
+* [Configuring error on masOS Mojave](https://github.com/Imagick/imagick/issues/289#issuecomment-500951481)

@@ -46,7 +46,11 @@ Reload bash profile
 
 eg:
 
-`mkfile -n 1g ~/Desktop/LargeTestFile` 
+`mkfile -n 1g ~/Desktop/LargeTestFile`
+
+## FlushDns
+
+`sudo killall -HUP mDNSResponder; sleep 2; echo macOS DNS Cache Reset | say`
 
 ## Reference
 

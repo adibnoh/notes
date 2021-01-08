@@ -40,6 +40,10 @@ or inside current directory
 
 `du -hs /path/to/directory`
 
+or
+
+`sudo du -h --max-depth=1 -x`
+
 ## Rename/Move file or directory
 
 `mv (option) filename1.ext filename2.ext`

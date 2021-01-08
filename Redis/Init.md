@@ -59,6 +59,21 @@ Disable snapshot
 * [4.1.1 Persisting to disk with snapshots](https://redislabs.com/ebook/part-2-core-concepts/chapter-4-keeping-data-safe-and-ensuring-performance/4-1-persistence-options/4-1-1-persisting-to-disk-with-snapshots/)
 * [Redis Persistence](https://redis.io/topics/persistence)
 
+### Limit Max Memory
+
+`maxmemory 1gb` - 70% from allocated memory
+
+### Max Memory Policy
+
+if we are intent to use redis as cache set to `maxmemory-policy allkeys-lru` - remove less used keys regardless of the  expire set
+
+### Append Only File persistence
+
+Append Only File will save each operation to log file - if we dont care about data persistence, disable this option
+
+`appendonly no`
+
 ## Reference
 
 * [Redis configuration for production](https://scaleyourcode.com/blog/article/15)
+* [How To Change Redis's Configuration from the Command Line](https://www.digitalocean.com/community/cheatsheets/how-to-change-redis-configuration)
