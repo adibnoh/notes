@@ -10,6 +10,10 @@ TODO
 
 `homestead up`
 
+or
+
+`homestead up --provision`
+
 ## Stop Homestead
 
 `homestead halt`
