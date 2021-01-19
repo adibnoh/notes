@@ -50,20 +50,6 @@ Note that this will work even if you are on a feature branch -- that does not ha
 
 `git push origin master`
 
-## Merge repo
-
-`cd path/to/project-b`
-
-`git remote add project-a path/to/project-a`
-
-`git fetch project-a`
-
-`git merge --allow-unrelated-histories project-a/master`
-
-or whichever branch you want to merge
-
-`git remote remove project-a`
-
 ## Check file history
 
 `gitk <filename>`
