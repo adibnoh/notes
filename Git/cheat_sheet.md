@@ -4,6 +4,14 @@
 
 `git init`
 
+## Set Global Default Branch Name
+
+`git config --global init.defaultBranch <name>`
+
+eg:
+
+`git config --global init.defaultBranch master`
+
 ## You can clone git or add repo url
 
 `git clone <repo_url>`
@@ -49,20 +57,6 @@ Note that this will work even if you are on a feature branch -- that does not ha
 `git merge test`
 
 `git push origin master`
-
-## Merge repo
-
-`cd path/to/project-b`
-
-`git remote add project-a path/to/project-a`
-
-`git fetch project-a`
-
-`git merge --allow-unrelated-histories project-a/master`
-
-or whichever branch you want to merge
-
-`git remote remove project-a`
 
 ## Check file history
 

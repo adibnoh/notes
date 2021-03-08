@@ -32,6 +32,22 @@ eg:
 
 TODO
 
+## Pull changes from original repo
+
+Contribute may pull latest changes from original repo
+
+`cd path/to/project-b`
+
+`git remote add project-a path/to/project-a`
+
+`git fetch project-a`
+
+`git merge --allow-unrelated-histories project-a/master`
+
+or whichever branch you want to merge
+
+`git remote remove project-a`
+
 ## References
 
 * [Modifying an inactive pull request locally](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/checking-out-pull-requests-locally#modifying-an-inactive-pull-request-locally)
