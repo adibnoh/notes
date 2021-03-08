@@ -4,6 +4,14 @@
 
 `git init`
 
+## Set Global Default Branch Name
+
+`git config --global init.defaultBranch <name>`
+
+eg:
+
+`git config --global init.defaultBranch master`
+
 ## You can clone git or add repo url
 
 `git clone <repo_url>`
