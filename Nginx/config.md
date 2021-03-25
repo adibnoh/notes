@@ -13,12 +13,11 @@ worker_processes auto;
 pid /run/nginx.pid;
 include /etc/nginx/modules-enabled/*.conf;
 
-# Value must equal to ulimit value
-# ulimit -n
-worker_rlimit_nofile 1024;
+# worker_connections * 2
+worker_rlimit_nofile 2048;
 
 events {
-    worker_connections 1024;
+    worker_connections 1024; // Should be equal to `ulimit -n`
     multi_accept on;
 }
 
