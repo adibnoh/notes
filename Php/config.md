@@ -27,6 +27,15 @@ Restart Php after config file has been updated
 
 `service php7.2-fpm restart`
 
+## Set Rlimit
+
+```conf
+
+; equal to soft limit files
+rlimit_files = 1024
+
+```
+
 ### Calculate Process
 
 #### Estimate Max Server / Max Children
