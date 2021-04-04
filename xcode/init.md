@@ -34,6 +34,11 @@
 
 Disable logging to console
 
+In your schema configuration add this 2 arguments
+
+1. `-FIRAnalyticsDebugEnabled`
+2. `-FIRDebugEnabled`
+
 ![Screenshot](https://image.ibb.co/j2vZTp/Screenshot_2018_10_11_at_3_14_41_PM.png)
 
 [How to disable Firebase/Core debug messages in iOS](https://stackoverflow.com/questions/40169286/how-to-disable-firebase-core-debug-messages-in-ios)

@@ -96,11 +96,17 @@ post_max_size = 40M
 
 ## Issues
 
+### child  exited with code 0 after  seconds from start
+
+if encounter this error message just ignore them
+
+### References
+
 * [How to Read the PHP Slow Request Log](https://serverpilot.io/community/articles/how-to-read-the-php-slow-request-log.html)
 * [Wordpress 502 & 504 Errors NGINX & PHP-FPM](https://www.digitalocean.com/community/questions/wordpress-502-504-errors-nginx-php-fpm)
 * [Adjusting child processes for PHP-FPM (Nginx)](https://myshell.co.uk/blog/2012/07/adjusting-child-processes-for-php-fpm-nginx/)
 
-## Reference
+## References
 
 * [How To Upgrade to PHP 7 on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-php-7-on-ubuntu-14-04)
 * [Determining the correct number of child processes for PHP-FPM on NGinx](https://www.kinamo.be/en/support/faq/determining-the-correct-number-of-child-processes-for-php-fpm-on-nginx)
