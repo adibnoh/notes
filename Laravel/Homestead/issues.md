@@ -20,6 +20,8 @@ need to reinstall certificate to browser
 
 [Using Laravel Homestead: 'no input file specified'](https://stackoverflow.com/questions/24274387/using-laravel-homestead-no-input-file-specified)
 
-## NPM
+## cross-env not found on npm run dev
 
-npm installation might not work inside homestead, you need to run it outside homestead
+`sudo npm install cross-env -g`
+
+`npm run watch`
