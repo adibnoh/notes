@@ -50,7 +50,7 @@ Edit `./src/index.js` (create if not exist)
 
 ```js
 
-export { default as MyComponent } from './components/MyComponent.vue'; // import your component
+export { default as MyComponent } from './components/MyComponent.vue'; // export your component
 
 ```
 
@@ -160,3 +160,11 @@ After install you may import component in your project
 import {<component->name>} from "<package.json->name>/src";
 
 ```
+
+## References
+
+* [How to publish a VueJS Component on NPM](https://medium.com/js-dojo/how-to-publish-a-vuejs-component-on-npm-aa703714b512)
+* [Vue CLI](https://cli.vuejs.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Vue CLI Tailwind Plugin](https://github.com/forsartis/vue-cli-plugin-tailwind)
+* [Yarn - install specific tag from gitlab](https://stackoverflow.com/questions/42154817/yarn-install-specific-tag-from-gitlab)
