@@ -26,7 +26,7 @@ eg:
 
 It is the effective value right now for that user. The user can change this limit, but we cannot set the soft limit higher than the hard limit.
 
-`ulimit -Hn` - will check current soft limit set by root
+`ulimit -Sn` - will check current soft limit set by root
 
 `su <user> --shell /bin/bash --command "ulimit -Sn"` - will check current hard limit for specific user
 
