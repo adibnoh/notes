@@ -117,6 +117,12 @@ Restart Php after config file has been updated
 
 `service php7.2-fpm restart`
 
+## Error Log
+
+default path is (if using nginx):
+
+`/var/log/nginx/graduan.com-error.log`
+
 ## Reference
 
 * [PHP-FPM: Process Management](https://serversforhackers.com/c/php-fpm-process-management)
