@@ -42,6 +42,12 @@ eg:
 
 `joe soft nofile 9000` - we are setting max hard limit for user joe to 9000
 
+## Check Usage
+
+We can check total of opened files for each process.
+
+`ls -1 /proc/<proccess_id>/fd | wc -l`
+
 ## Reference
 
 * [What is Ulimit Parameter? How to manage it?
