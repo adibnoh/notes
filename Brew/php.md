@@ -61,6 +61,10 @@ restart php
 
 After each upgrade, need to reinstall all Php extension manually and update their path in `php.ini`.
 
+### Imap
+
+https://stackoverflow.com/a/51584213
+
 ## References
 
 * [Php Redis](https://github.com/phpredis/phpredis)

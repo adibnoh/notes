@@ -36,6 +36,10 @@ eg (change from Mysql 8.0 to 5.7)
 
 `brew link mysql@5.7`
 
+## List all possible config location
+
+`mysql --help | grep cnf`
+
 ## Cannot connect to Mysql after brew cleanup
 
 run `mysql` at terminal will show this message

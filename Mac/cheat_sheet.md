@@ -52,6 +52,12 @@ eg:
 
 `sudo killall -HUP mDNSResponder; sleep 2; echo macOS DNS Cache Reset | say`
 
+### Clear DNS in Chrome
+
+Run this in chrome `chrome://net-internals/#dns`
+
+Also, we need to clear browser history and cache.
+
 ## Reference
 
 * [Generate Random Passwords Command Line](http://osxdaily.com/2011/05/10/generate-random-passwords-command-line/)
