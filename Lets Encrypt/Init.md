@@ -16,9 +16,13 @@
 
 ## Get SSL Cert
 
+ensure web directory is same as domain name
+
+`sudo certbot --nginx -d domain.com`
+
 ### Web Root Path Method
 
-so far this one worked without no problem
+You may try this method too.
 
 `certbot certonly --webroot --webroot-path <public_path_to_domain> --renew-by-default -d yourdomainhere.com`
 

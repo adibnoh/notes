@@ -3,7 +3,7 @@
 SSL connection may not work while accessing site under homestead, to resolve this we need to install homestead certificate to our browser
 
 1. SSH to homestead
-2. cd /etc/ssl
+2. cd /etc/ssl/certs
 3. cp ca.homestead.homestead.crt /home/vagrant/<homestead_shared_directory>
 
 You should see `ca.homestead.homestead.crt` file inside your <homestead_shared_directory>, we need to import `ca.homestead.homestead.crt` to our browser

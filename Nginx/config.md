@@ -100,6 +100,28 @@ http {
 
 ```
 
+### Run nginx as different user
+
+`/etc/nginx/nginx.conf`
+
+```conf
+
+user ftw; // change this line, we will run nginx as ftw
+
+```
+
+ensure this directory `/var/lib/nginx` is under new user
+
+`ls -ld /var/lib/nginx`
+
+if user is still under root or www-data, change it to correct user
+
+`sudo chown -Rf ftw:ftw /var/lib/nginx`
+
+Restart Nginx
+
+`service nginx restart`
+
 ## Config for specific sites
 
 This config usually located in folder `/etc/nginx/sites-available`
@@ -192,3 +214,9 @@ server {
     # }
 # }
 ```
+
+## Issues
+
+### Permission denied while reading upstream
+
+Please refer [Run nginx as different user](#Run+nginx+as+different+user)
