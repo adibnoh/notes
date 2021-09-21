@@ -29,3 +29,9 @@
 ## Go previous tab
 
 `cmd` + `shift` + `]`
+
+## Fold code block
+
+`cmd` + `-` or
+
+`cmd` + `+`
