@@ -16,3 +16,7 @@ Please always refer original documentation, before refering to this documents
 
 * [Download Composer](https://getcomposer.org/download/)
 * [How To Install and Use Composer on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04)
+
+## Install package in production
+
+`composer install --no-dev`

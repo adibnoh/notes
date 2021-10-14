@@ -25,3 +25,13 @@ need to reinstall certificate to browser
 `sudo npm install cross-env -g`
 
 `npm run watch`
+
+## Timed out while waiting for the machine to boot.
+
+This error popup while vagrant trying to establish connection from local machine to virtual machine.
+
+Some of the solution: 
+
+* Enabled virtualization in BIOS
+* Rerun `vagrant up --provision`
+* Disabled Hyper-V
