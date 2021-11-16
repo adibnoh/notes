@@ -76,6 +76,8 @@ Note that this will work even if you are on a feature branch -- that does not ha
 
 `git reset --hard HEAD~1` - remove changes
 
+`git reset --hard origin/master` - if all fails
+
 ### Temporary switch commit
 
 If you want to temporarily go back to it, fool around, then come back to where you are, all you have to do is check out the desired commit:
