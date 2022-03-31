@@ -51,6 +51,10 @@ extension=<path_to_redis.so>/redis.so
 
 restart php
 
+## Pecl Installation Directory
+
+`pecl config-get ext_dir`
+
 ## Restart Php
 
 `brew services restart php`
@@ -69,3 +73,4 @@ https://stackoverflow.com/a/51584213
 
 * [Php Redis](https://github.com/phpredis/phpredis)
 * [Configuring error on masOS Mojave](https://github.com/Imagick/imagick/issues/289#issuecomment-500951481)
+* [Installing Homebrew PHP extensions with PECL](https://grrr.tech/posts/installing-homebrew-php-extensions-with-pecl/)
