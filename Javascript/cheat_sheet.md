@@ -19,3 +19,7 @@ window.location.href = "http://stackoverflow.com"
 ```
 
 * [https://stackoverflow.com/a/506004](https://stackoverflow.com/a/506004)
+
+## Dom Event Delegation
+
+https://stackoverflow.com/a/1688293
