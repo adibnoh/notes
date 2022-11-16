@@ -13,3 +13,8 @@ DBngin use custom socket for each database instance.
 eg:
 
 `/tmp/mysql_3306.sock`
+
+## Reference
+
+* [https://github.com/TablePlus/DBngin/issues/52#issuecomment-700144597](https://github.com/TablePlus/DBngin/issues/52#issuecomment-700144597)
+
