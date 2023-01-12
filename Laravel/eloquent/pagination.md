@@ -17,3 +17,15 @@ $jobs->setCollection($data);
 
 
 ```
+
+or
+
+```php
+
+$paginator->getCollection()->transform(function ($value) {
+    // Your code here
+    return $value;
+});
+
+
+```
