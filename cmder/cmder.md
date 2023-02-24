@@ -8,6 +8,10 @@
 
 Sometimes paste is not working in nano editor using cmder. Instead using `1`, we can try using `2` & `3`.
 
+## Open working directory in explorer
+
+`start .`
+
 ## References
 
 * [How do I paste multi-line python script into ConEmu?](https://stackoverflow.com/a/49311746)
