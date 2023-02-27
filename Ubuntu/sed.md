@@ -68,3 +68,4 @@ It is reconmmended to create a backup file when modifying any file. To keep a ba
 
 * [Sed - An Introduction and Tutorial by Bruce Barnett](https://www.grymoire.com/Unix/Sed.html#uh-0)
 * [https://stackoverflow.com/a/60562182](https://stackoverflow.com/a/60562182)
+* [The Basics of Using the Sed Stream Editor to Manipulate Text in Linux](https://www.digitalocean.com/community/tutorials/the-basics-of-using-the-sed-stream-editor-to-manipulate-text-in-linux)
