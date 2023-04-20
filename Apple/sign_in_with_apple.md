@@ -38,7 +38,7 @@ We're using Ruby scripts to generate client secret.
 
 Install JWT - `gem install jwt`
 
-Create `client_secret.db` or any name you preferred.
+Create `client_secret.rb` or any name you preferred.
 
 ```rb
 
