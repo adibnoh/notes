@@ -76,3 +76,23 @@ Execute `client_secret.db` - `ruby client_secret.rb`
 https://socialiteproviders.com/Apple/#installation-basic-usage
 
 https://bannister.me/blog/generating-a-client-secret-for-sign-in-with-apple-on-each-request
+
+## Sending email to private Apple email
+
+When user sign in to your site using Sign In With Apple. They may choose to hide their email using private Apple email.
+
+This private Apple email will blocked all unauthorized sender.
+
+To allow our transactional mail service (such as Mailgun) to send email to our users, we need to add our domain, subdomain and email address into "Sign in with Apple for Email Communication".
+
+Sign in to Apple Developer page, [https://developer.apple.com](https://developer.apple.com). 
+
+Go to Services, [https://developer.apple.com/account/resources/services/list](https://developer.apple.com/account/resources/services/list).
+
+In the section "Sign in with Apple for Email Communication", click configure button.
+
+Inside Configuration page, add domain, subdomain and email address in Email Sources section.
+
+Reference:
+
+[https://medium.com/@nmpyt21/mandrill-send-to-apple-private-email-e7514f74d8be](Mandrill Send to Apple Private Email)

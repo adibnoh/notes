@@ -15,3 +15,13 @@ example
 ## Option is removed
 
 [Read more here](https://github.com/Homebrew/homebrew-core/issues/31510)
+
+## Issues
+
+### You should find replacements for the following formulae: ilmbase php@7.4
+
+`brew uses --installed ilmbase`
+
+`brew uninstall ilmbase`
+
+[https://apple.stackexchange.com/a/435422](https://apple.stackexchange.com/a/435422)

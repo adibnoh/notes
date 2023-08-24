@@ -69,6 +69,30 @@ After each upgrade, need to reinstall all Php extension manually and update thei
 
 https://stackoverflow.com/a/51584213
 
+## Common Issues
+
+### dyld: Library not loaded: /usr/local/opt/icu4c/lib
+
+[https://stackoverflow.com/a/54873233](https://stackoverflow.com/a/54873233)
+
+```
+brew upgrade icu4c
+
+brew upgrade // or upgrade all packages
+
+brew cleanup
+```
+
+## Error: php@7.4 has been disabled because it is a versioned formula!
+
+```
+brew tap shivammathur/php
+brew install shivammathur/php/php@7.4
+brew link php@7.4
+```
+
+[https://stackoverflow.com/a/74856087](https://stackoverflow.com/a/74856087)
+
 ## References
 
 * [Php Redis](https://github.com/phpredis/phpredis)

@@ -6,7 +6,11 @@
 
 `composer self-update 1.10.13`
 
-## Upgrade to latest version
+## Check Global Composer version
+
+`composer -V`
+
+## Upgrade Global Composer to latest version
 
 `composer self-update`
 
