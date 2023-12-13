@@ -84,6 +84,16 @@ If you want to temporarily go back to it, fool around, then come back to where y
 
 `git checkout 0d1d7fc32`
 
+## Restore file from specific commit
+
+`git restore -s <SHA1>     -- afile`
+
+eg:
+
+`git restore -s b8d0a496f5767a949a1baa164228d88700e18a49 -- resources/views/home.blade.php`
+
+[How to retrieve a single file from a specific revision in Git?](https://stackoverflow.com/a/610315)
+
 ## Reference
 
 * [How to checkout remote git tag](https://stackoverflow.com/questions/35979642/how-to-checkout-remote-git-tag)

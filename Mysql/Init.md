@@ -50,3 +50,4 @@ Mysql usage more than 100%
 
 * [How To Set Up a Remote Database to Optimize Site Performance with MySQL](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql)
 * [How To Create a New User and Grant Permissions in MySQL](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql)
+* [MySQLTuner-perl](https://github.com/major/MySQLTuner-perl)

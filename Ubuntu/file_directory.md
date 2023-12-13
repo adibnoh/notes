@@ -82,6 +82,12 @@ remove all files and directory including hidden files in first directory level
 
 `ls -l -R <path> | grep ^- | wc -l`
 
+## Delete empty directories
+
+`find . -empty -type d -delete`
+
+[How do I delete all empty directories in a directory from the command line?](https://askubuntu.com/a/73711)
+
 ## Reference
 
 * [Find number of files in folder and sub folders?](https://askubuntu.com/questions/34099/find-number-of-files-in-folder-and-sub-folders)
