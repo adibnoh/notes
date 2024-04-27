@@ -68,6 +68,10 @@ Note that this will work even if you are on a feature branch -- that does not ha
 
 `git checkout tags/<tag_name> -b <branch_name>`
 
+## Discard local changes
+
+`git reset --hard`
+
 ## Commit
 
 ### Delete recent commit

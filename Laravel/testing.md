@@ -1,5 +1,9 @@
 # Testing
 
+## Environment
+
+In your `.env` or `.env.testing` please set `APP_ENV=testing`.
+
 ## Feature
 
 ## Unit
@@ -27,6 +31,21 @@ Or to run exact method from that specific file
 example:
 
 `phpunit --filter '/::testExample$/' path/to/filename.php`
+
+## Run Testing using Laravel Command
+
+`php artisan test` - this will run all tests and using file `.env` as configuration environment.
+
+`php artisan test --env=local` - this will use `.env.local` as configuration environment.
+
+`php artisan test --env=local --filter test_this_method tests/Feature/ExampleTest` - this will run specific test. We need to specify the method and file path.
+
+## Common Issues
+
+### CSRF Token Mismatch
+
+In your `.env` please set to `APP_ENV=testing`.
+
 
 ## Reference
 
