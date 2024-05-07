@@ -38,7 +38,7 @@ example:
 
 `php artisan test --env=local` - this will use `.env.local` as configuration environment.
 
-`php artisan test --env=local --filter test_this_method tests/Feature/ExampleTest` - this will run specific test. We need to specify the method and file path.
+`php artisan test --env=local --filter test_this_method tests/Feature/ExampleTest.php` - this will run specific test. We need to specify the method and file path.
 
 ## Common Issues
 
